@@ -40,6 +40,10 @@ export default defineConfig({
     solidJs()
   ],
   output: 'server',
+  server: { 
+    port: 3000,
+    host:true
+    },
   adapter: envAdapter(),
   vite: {
     plugins: [
