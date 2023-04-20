@@ -1,3 +1,8 @@
+[![](https://cloud-upyun.ddiu.site/picture/2023/04/15/xAe0dY.png)](https://v2.chatgpt.ddiu.me)
+
+> We are working on V2 Version! Preview & more info on https://github.com/ddiu8081/chatgpt-demo/discussions/247.
+
+
 # ChatGPT-API Demo
 
 English | [简体中文](./README.zh-CN.md)
@@ -59,7 +64,7 @@ A demo repo based on [OpenAI GPT-3.5 Turbo API.](https://platform.openai.com/doc
 
 ### Deploy With Netlify
 
-[![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ddiu8081/chatgpt-demo#OPENAI_API_KEY=&HTTPS_PROXY=&OPENAI_API_BASE_URL=&HEAD_SCRIPTS=&SECRET_KEY=&OPENAI_API_MODEL=&SITE_PASSWORD=)
+[![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ddiu8081/chatgpt-demo#OPENAI_API_KEY=&HTTPS_PROXY=&OPENAI_API_BASE_URL=&HEAD_SCRIPTS=&PUBLIC_SECRET_KEY=&OPENAI_API_MODEL=&SITE_PASSWORD=)
 
 **Step-by-step deployment tutorial:**
 
@@ -106,7 +111,7 @@ services:
       # - HTTPS_PROXY=YOUR_HTTPS_PROXY
       # - OPENAI_API_BASE_URL=YOUR_OPENAI_API_BASE_URL
       # - HEAD_SCRIPTS=YOUR_HEAD_SCRIPTS
-      # - SECRET_KEY=YOUR_SECRET_KEY
+      # - PUBLIC_SECRET_KEY=YOUR_SECRET_KEY
       # - SITE_PASSWORD=YOUR_SITE_PASSWORD
       # - OPENAI_API_MODEL=YOUR_OPENAI_API_MODEL
 ```
@@ -132,7 +137,7 @@ You can control the website through environment variables.
 | `HTTPS_PROXY` | Provide proxy for OpenAI API. e.g. `http://127.0.0.1:7890` | `null` |
 | `OPENAI_API_BASE_URL` | Custom base url for OpenAI API. | `https://api.openai.com` |
 | `HEAD_SCRIPTS` | Inject analytics or other scripts before `</head>` of the page | `null` |
-| `SECRET_KEY` | Secret string for the project. Use for generating signatures for API calls | `null` |
+| `PUBLIC_SECRET_KEY` | Secret string for the project. Use for generating signatures for API calls | `null` |
 | `SITE_PASSWORD` | Set password for site, support multiple password separated by comma. If not set, site will be public | `null` |
 | `OPENAI_API_MODEL` | ID of the model to use. [List models](https://platform.openai.com/docs/api-reference/models/list) | `gpt-3.5-turbo` |
 
